@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCrowd - Multi-Tenant SaaS + LMS + Crowdfunding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .feature-card ul {
+            list-style: none;
+        }
+        
+        .feature-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .feature-card li:before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .status {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .status h2 {
+            color: #28a745;
+            margin-bottom: 1rem;
+        }
+        
+        .api-links {
+            margin-top: 2rem;
+        }
+        
+        .api-links a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0.5rem;
+            transition: background 0.3s ease;
+        }
+        
+        .api-links a:hover {
+            background: #5a6fd8;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 3rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 EduCrowd</h1>
+            <p>Multi-Tenant SaaS + Learning Management System + Crowdfunding Platform</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <h3>🏢 Multi-Tenant SaaS</h3>
+                <ul>
+                    <li>Tenant Registration & Management</li>
+                    <li>Role-Based Access Control (RBAC)</li>
+                    <li>Customizable Settings per Tenant</li>
+                    <li>Audit Logs & Compliance</li>
+                    <li>Secure Data Isolation</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>📚 Learning Management System</h3>
+                <ul>
+                    <li>Course & Lesson Management</li>
+                    <li>Quiz & Assessment System</li>
+                    <li>Progress Tracking & Analytics</li>
+                    <li>Student & Teacher Dashboards</li>
+                    <li>AI-Powered Quiz Generation</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>💰 Crowdfunding Platform</h3>
+                <ul>
+                    <li>Project Creation & Management</li>
+                    <li>Secure Payment Processing</li>
+                    <li>Rewards & Perks System</li>
+                    <li>Real-Time Analytics</li>
+                    <li>Backer Management</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="status">
+            <h2>✅ Week 1 Complete!</h2>
+            <p>Project scaffolding, Docker setup, users & tenants apps are ready.</p>
+            
+            <div class="api-links">
+                <a href="/api/v1/core/health/">Health Check</a>
+                <a href="/api/v1/auth/login/">Authentication</a>
+                <a href="/api/v1/tenants/">Tenants</a>
+                <a href="/api/v1/lms/">LMS (Coming Soon)</a>
+                <a href="/api/v1/crowdfunding/">Crowdfunding (Coming Soon)</a>
+                <a href="/admin/">Django Admin</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Built with Django, Docker, PostgreSQL, Redis, and Celery</p>
+            <p>Week 1: Project Setup ✅ | Week 2: LMS Module | Week 3: Crowdfunding Module</p>
+        </div>
+    </div>
+</body>
+</html>
